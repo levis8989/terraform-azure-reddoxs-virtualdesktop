@@ -1,0 +1,219 @@
+data "aws_ami" "example" {
+    architecture          = "x86_64"
+    arn                   = "arn:aws:ec2:us-west-2::image/ami-0c689271e7199b860"
+    block_device_mappings = [
+        {
+            device_name  = "/dev/sda1"
+            ebs          = {
+                "delete_on_termination" = "true"
+                "encrypted"             = "false"
+                "iops"                  = "0"
+                "snapshot_id"           = "snap-03f9959c6f43edc56"
+                "throughput"            = "0"
+                "volume_size"           = "30"
+                "volume_type"           = "gp2"
+            }
+            no_device    = ""
+            virtual_name = ""
+        },
+        {
+            device_name  = "xvdca"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral0"
+        },
+        {
+            device_name  = "xvdcb"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral1"
+        },
+        {
+            device_name  = "xvdcc"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral2"
+        },
+        {
+            device_name  = "xvdcd"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral3"
+        },
+        {
+            device_name  = "xvdce"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral4"
+        },
+        {
+            device_name  = "xvdcf"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral5"
+        },
+        {
+            device_name  = "xvdcg"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral6"
+        },
+        {
+            device_name  = "xvdch"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral7"
+        },
+        {
+            device_name  = "xvdci"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral8"
+        },
+        {
+            device_name  = "xvdcj"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral9"
+        },
+        {
+            device_name  = "xvdck"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral10"
+        },
+        {
+            device_name  = "xvdcl"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral11"
+        },
+        {
+            device_name  = "xvdcm"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral12"
+        },
+        {
+            device_name  = "xvdcn"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral13"
+        },
+        {
+            device_name  = "xvdco"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral14"
+        },
+        {
+            device_name  = "xvdcp"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral15"
+        },
+        {
+            device_name  = "xvdcq"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral16"
+        },
+        {
+            device_name  = "xvdcr"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral17"
+        },
+        {
+            device_name  = "xvdcs"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral18"
+        },
+        {
+            device_name  = "xvdct"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral19"
+        },
+        {
+            device_name  = "xvdcu"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral20"
+        },
+        {
+            device_name  = "xvdcv"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral21"
+        },
+        {
+            device_name  = "xvdcw"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral22"
+        },
+        {
+            device_name  = "xvdcx"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral23"
+        },
+        {
+            device_name  = "xvdcy"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral24"
+        },
+        {
+            device_name  = "xvdcz"
+            ebs          = {}
+            no_device    = ""
+            virtual_name = "ephemeral25"
+        },
+    ]
+    creation_date         = "2023-08-10T06:59:59.000Z"
+    deprecation_time      = "2025-08-10T06:59:59.000Z"
+    description           = "Microsoft Windows Server 2016 with Desktop Experience Locale English AMI provided by Amazon"
+    ena_support           = true
+    hypervisor            = "xen"
+    id                    = "ami-0c689271e7199b860"
+    image_id              = "ami-0c689271e7199b860"
+    image_location        = "amazon/Windows_Server-2016-English-Full-Base-2023.08.10"
+    image_owner_alias     = "amazon"
+    image_type            = "machine"
+    include_deprecated    = false
+    most_recent           = true
+    name                  = "Windows_Server-2016-English-Full-Base-2023.08.10"
+    owner_id              = "801119661308"
+    platform              = "windows"
+    platform_details      = "Windows"
+    product_codes         = []
+    public                = true
+    root_device_name      = "/dev/sda1"
+    root_device_type      = "ebs"
+    root_snapshot_id      = "snap-03f9959c6f43edc56"
+    sriov_net_support     = "simple"
+    state                 = "available"
+    state_reason          = {
+        "code"    = "UNSET"
+        "message" = "UNSET"
+    }
+    tags                  = {}
+    usage_operation       = "RunInstances:0002"
+    virtualization_type   = "hvm"
+
+    filter {
+        name   = "name"
+        values = [
+            "Windows_Server-2016-English-Full-Base-*",
+        ]
+    }
+    filter {
+        name   = "virtualization-type"
+        values = [
+            "hvm",
+        ]
+    }
+}
